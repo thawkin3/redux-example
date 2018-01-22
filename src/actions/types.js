@@ -1,0 +1,1 @@
+export const DO_TEST = 'do_test';
