@@ -1,3 +1,5 @@
+This is a basic React+Redux example built using create-react-app. It can be used as a walking skeleton for using as your base React+Redux app which you can then build out. It contains all the basic boilerplate code for action creators, action types, reducers, and initial state in the Redux store.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
