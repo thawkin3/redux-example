@@ -22,6 +22,17 @@
   margin: 30px;
 }
 
+.App-footer {
+  margin: 30px;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.App-footer a {
+  color: #222;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
