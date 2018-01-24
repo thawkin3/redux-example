@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-	testResults: null
+	clickCount: 0
 };
 
 export default INITIAL_STATE;

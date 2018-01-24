@@ -1,8 +1,18 @@
 import axios from 'axios';
 import {
-    DO_TEST
+    INCREMENT_COUNTER,
+    DECREMENT_COUNTER,
+    RESET_COUNTER
 } from './types';
 
-export const doTest = () => dispatch => {
-    dispatch({ type: DO_TEST, payload: 'test action' });
+export const incrementCounter = () => dispatch => {
+    dispatch({ type: INCREMENT_COUNTER, payload: null });
+}
+
+export const decrementCounter = () => dispatch => {
+    dispatch({ type: DECREMENT_COUNTER, payload: null });
+}
+
+export const resetCounter = () => dispatch => {
+    dispatch({ type: RESET_COUNTER, payload: null });
 }

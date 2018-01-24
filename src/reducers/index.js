@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import doTestReducer from './doTestReducer';
+import clickCountReducer from './clickCountReducer';
 
 export default combineReducers({
-    testResults: doTestReducer
+    clickCount: clickCountReducer
 });

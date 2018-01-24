@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../actions/index';
+import Button from './Button';
+import CounterResults from './CounterResults';
 import logo from '../assets/logo.svg';
 import './App.css';
 
@@ -8,14 +12,17 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">React+Redux Example</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/components/App.js</code> and save to reload.
-        </p>
+        <div className="App-body">
+          <Button clickHandler={this.props.incrementCounter} buttonText="Increment Counter" />
+          <Button clickHandler={this.props.decrementCounter} buttonText="Decrement Counter" />
+          <Button clickHandler={this.props.resetCounter} buttonText="Reset Counter" />
+          <CounterResults />
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+export default connect(null, actions)(App);
