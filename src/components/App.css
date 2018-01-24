@@ -22,6 +22,12 @@
   margin: 30px;
 }
 
+.App-body .introText {
+  width: 600px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
 .App-footer {
   margin: 30px;
   text-align: right;
@@ -31,6 +37,16 @@
 }
 .App-footer a {
   color: #222;
+}
+
+@media screen and (max-width: 480px) {
+  .App-footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 @keyframes App-logo-spin {
