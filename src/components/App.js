@@ -6,7 +6,7 @@ import CounterResults from './CounterResults';
 import logo from '../assets/logo.svg';
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="App">
