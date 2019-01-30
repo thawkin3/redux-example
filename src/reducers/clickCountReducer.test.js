@@ -12,7 +12,7 @@ describe('clickCountReducer', () => {
 
         expect(clickCountReducer(undefined, {
             type: INCREMENT_COUNTER,
-            payload: expectedValue,
+            payload: null,
         })).toEqual(expectedValue);
     });
 
@@ -21,7 +21,7 @@ describe('clickCountReducer', () => {
 
         expect(clickCountReducer(undefined, {
             type: DECREMENT_COUNTER,
-            payload: expectedValue,
+            payload: null,
         })).toEqual(expectedValue);
     });
 
@@ -30,7 +30,7 @@ describe('clickCountReducer', () => {
 
         expect(clickCountReducer(50, {
             type: RESET_COUNTER,
-            payload: expectedValue,
+            payload: null,
         })).toEqual(expectedValue);
     });
 });
