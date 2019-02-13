@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
-import { Button } from './Button';
+import Button from './Button';
 
 let wrapper, props;
 
