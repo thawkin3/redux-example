@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches the snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h1
+      className="App-title"
+    >
+      React+Redux Example
+    </h1>
+  </header>
+  <div
+    className="App-body"
+  >
+    <p
+      className="introText"
+    >
+      This is a basic React+Redux example built using create-react-app. It can be used as a walking skeleton for your base React+Redux app which you can then build out. It contains all the basic boilerplate code for action creators, action types, reducers, and initial state.
+    </p>
+    <Connect(Button)
+      buttonText="Increment Counter"
+    />
+    <Connect(Button)
+      buttonText="Decrement Counter"
+    />
+    <Connect(Button)
+      buttonText="Reset Counter"
+    />
+    <Connect(CounterResults) />
+  </div>
+  <div
+    className="App-footer"
+  >
+    <a
+      href="https://github.com/thawkin3/redux-example"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      https://github.com/thawkin3/redux-example
+    </a>
+  </div>
+</div>
+`;
