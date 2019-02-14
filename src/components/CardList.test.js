@@ -4,7 +4,8 @@ import { shallow } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
 import { CardList } from './CardList';
 
-let wrapper, props;
+let wrapper;
+let props;
 
 describe('CardList', () => {
     beforeEach(() => {

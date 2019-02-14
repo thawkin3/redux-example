@@ -4,7 +4,8 @@ import { shallow } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
 import { Form } from './Form';
 
-let wrapper, props;
+let wrapper;
+let props;
 
 describe('Form', () => {
     beforeEach(() => {
