@@ -26,16 +26,31 @@ exports[`App matches the snapshot 1`] = `
     >
       This is a basic React+Redux example built using create-react-app. It can be used as a walking skeleton for your base React+Redux app which you can then build out. It contains all the basic boilerplate code for action creators, action types, reducers, and initial state.
     </p>
-    <Connect(Button)
-      buttonText="Increment Counter"
-    />
-    <Connect(Button)
-      buttonText="Decrement Counter"
-    />
-    <Connect(Button)
-      buttonText="Reset Counter"
-    />
-    <Connect(CounterResults) />
+    <div
+      className="exampleSection"
+    >
+      <h2>
+        Synchronous Example
+      </h2>
+      <Button
+        buttonText="Increment Counter"
+      />
+      <Button
+        buttonText="Decrement Counter"
+      />
+      <Button
+        buttonText="Reset Counter"
+      />
+      <Connect(CounterResults) />
+    </div>
+    <div
+      className="exampleSection"
+    >
+      <h2>
+        Asynchronous Example
+      </h2>
+      <GitHubProfileViewer />
+    </div>
   </div>
   <div
     className="App-footer"

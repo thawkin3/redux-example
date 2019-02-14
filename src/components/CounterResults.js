@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../actions/index';
 import './CounterResults.css';
 
-export class CounterResults extends Component {
-  render() {
-    return (
-      <p>Counter value: {this.props.clickCount}</p>
-    );
-  }
+export const CounterResults = ({ clickCount }) => (
+    <p>Counter value: {clickCount}</p>
+);
+
+function mapStateToProps({ clickCount }) {
+    return { clickCount };
 }
 
-function mapStateToProps({clickCount}) {
-    return {
-        clickCount
-    };
-}
+CounterResults.displayName = 'CounterResults';
 
-export default connect(mapStateToProps, actions)(CounterResults);
+export default connect(mapStateToProps, null)(CounterResults);

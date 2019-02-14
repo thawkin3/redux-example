@@ -1,0 +1,9 @@
+.search-form {
+  margin: 10px auto 30px auto;
+  position: relative;
+}
+
+.search-label {
+  display: block;
+  font-size: 75%;
+}

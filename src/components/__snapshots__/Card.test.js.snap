@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card matches the snapshot 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt=""
+    className="card-img"
+    src="url/here/img.jpg"
+  />
+  <div
+    className="card-info"
+  >
+    <div
+      className="card-link"
+    >
+      <a
+        href="https://github.com/thawkin3"
+        target="_blank"
+      >
+        Tyler Hawkins
+      </a>
+    </div>
+    <div
+      className="card-company"
+    >
+      @instructure
+    </div>
+  </div>
+</div>
+`;
