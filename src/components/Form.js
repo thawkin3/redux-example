@@ -27,20 +27,30 @@ export class Form extends Component {
     };
 
     render() {
+        const { ajaxRequestInProgress } = this.props;
         const { username } = this.state;
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className="search-form" onSubmit={this.handleSubmit}>
+                <label htmlFor="search" className="search-label">Search for a GitHub user</label>
                 <input
                     type="text"
+                    id="search"
+                    name="search"
                     value={username}
                     onChange={this.handleChange}
+                    disabled={ajaxRequestInProgress}
                     placeholder="Github username"
                     required
                 />
                 <button type="submit">Add card</button>
+                { ajaxRequestInProgress && <p className="searching">Searching...</p> }
             </form>
         );
     };
 }
 
-export default connect(null, actions)(Form);
+function mapStateToProps({ users }) {
+    return { ajaxRequestInProgress: users.ajaxRequestInProgress };
+}
+
+export default connect(mapStateToProps, actions)(Form);

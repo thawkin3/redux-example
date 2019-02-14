@@ -10,4 +10,6 @@ function mapStateToProps({ clickCount }) {
     return { clickCount };
 }
 
+CounterResults.displayName = 'CounterResults';
+
 export default connect(mapStateToProps, null)(CounterResults);

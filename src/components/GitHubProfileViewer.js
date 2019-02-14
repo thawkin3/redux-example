@@ -11,4 +11,6 @@ const GitHubProfileViewer = () => (
     </div>
 );
 
+GitHubProfileViewer.displayName = 'GitHubProfileViewer';
+
 export default GitHubProfileViewer;

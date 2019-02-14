@@ -22,7 +22,7 @@ describe('App', () => {
 
     // Finding content that the component should render
     it('renders three Button components', () => {
-        expect(wrapper.find('Connect(Button)').length).toEqual(3);
+        expect(wrapper.find('Button').length).toEqual(3);
     });
 
     // Finding content that the component should render
@@ -38,6 +38,11 @@ describe('App', () => {
     // Finding content that the component should render
     it('renders a div with an App-footer class', () => {
         expect(wrapper.find('.App-footer').length).toEqual(1);
+    });
+
+    // Finding content that the component should render
+    it('renders two divs with an exampleSection class', () => {
+        expect(wrapper.find('.exampleSection').length).toEqual(2);
     });
 
     // Snapshot testing

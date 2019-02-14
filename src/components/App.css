@@ -20,6 +20,7 @@
 
 .App-body {
   margin: 30px;
+  padding-bottom: 60px;
 }
 
 .App-body .introText {
@@ -28,24 +29,28 @@
   margin: 20px auto;
 }
 
+.exampleSection {
+  margin-bottom: 40px;
+}
+
 .App-footer {
   margin: 30px;
   text-align: right;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: -30px;
+  right: -30px;
+  left: -30px;
+  background: #222;
+  color: #fff;
+  padding: 20px;
 }
 .App-footer a {
-  color: #222;
+  color: #fff;
 }
 
 @media screen and (max-width: 480px) {
   .App-footer {
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
   }
 }
 

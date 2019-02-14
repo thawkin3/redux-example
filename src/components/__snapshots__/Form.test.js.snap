@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form matches the snapshot 1`] = `
+<form
+  className="search-form"
+  onSubmit={[Function]}
+>
+  <label
+    className="search-label"
+    htmlFor="search"
+  >
+    Search for a GitHub user
+  </label>
+  <input
+    disabled={false}
+    id="search"
+    name="search"
+    onChange={[Function]}
+    placeholder="Github username"
+    required={true}
+    type="text"
+    value=""
+  />
+  <button
+    type="submit"
+  >
+    Add card
+  </button>
+</form>
+`;

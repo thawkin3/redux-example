@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
 import clickCountReducer from './clickCountReducer';
-import cardsReducer from './cardsReducer';
+import usersReducer from './usersReducer';
 
 export default combineReducers({
     clickCount: clickCountReducer,
-    cards: cardsReducer,
+    users: usersReducer,
 });

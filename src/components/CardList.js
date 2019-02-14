@@ -10,8 +10,10 @@ export const CardList = ({ cards }) => (
     </div>
 );
 
-function mapStateToProps({ cards }) {
-    return { cards };
+function mapStateToProps({ users }) {
+    return { cards: users.cards };
 }
+
+CardList.displayName = 'CardList';
 
 export default connect(mapStateToProps, actions)(CardList);

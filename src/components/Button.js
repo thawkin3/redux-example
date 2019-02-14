@@ -10,4 +10,6 @@ const Button = ({ buttonText, clickHandler }) => (
     </button>
 );
 
+Button.displayName = 'Button';
+
 export default Button;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GitHubProfileViewer matches the snapshot 1`] = `
+<div>
+  <h3>
+    Github Profile Viewer
+  </h3>
+  <Connect(Form) />
+  <Connect(CardList) />
+</div>
+`;

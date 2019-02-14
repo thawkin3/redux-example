@@ -1,6 +1,9 @@
 const INITIAL_STATE = {
 	clickCount: 0,
-	cards: [],
+	users: {
+		cards: [],
+		ajaxRequestInProgress: false,
+	},
 };
 
 export default INITIAL_STATE;

@@ -66,4 +66,32 @@ describe('actions', () => {
             expect(actionsInStore).toEqual([expectedAction]);
         });
     });
+
+    describe('fetchGitHubUser', () => {
+        it.skip('should create an action to FETCHING_USER_IN_PROGRESS, ADD_CARD, and then FETCHING_USER_IN_PROGRESS again', () => {
+            // Set up your expected action type and payload
+            const actionPayload = null;
+            const expectedActions = [
+                {
+                    type: types.FETCHING_USER_IN_PROGRESS,
+                    payload: true,
+                },
+                {
+                    type: types.ADD_CARD,
+                    payload: { id: 1, name: 'Tyler Hawkins', 'avatar_url': 'url/here/img.jpg' },
+                },
+                {
+                    type: types.FETCHING_USER_IN_PROGRESS,
+                    payload: false,
+                },
+            ];
+
+            // Dispatch the action
+            store.dispatch(actions.fetchGitHubUser());
+
+            // Test if your store dispatched the expected actions
+            const actionsInStore = store.getActions();
+            expect(actionsInStore).toEqual(expectedActions);
+        });
+    });
 });
